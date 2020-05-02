@@ -8,7 +8,7 @@ int check_cycle(listint_t *list)
 listint_t *head = list;
 listint_t *foot = list;
 
-if(head)
+if (head)
 {
 	while (foot && foot->next)
 	{
@@ -18,9 +18,9 @@ if(head)
 
 	if (foot == head)
 	{
-	return(1);
+	return (1);
 	}
 	}
 }
-return(0);
+return (0);
 }
