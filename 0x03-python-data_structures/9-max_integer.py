@@ -7,4 +7,5 @@ def max_integer(my_list=[]):
         return None
     else:
         my_list.sort()
-        return my_list[i]
+        maxim = my_list[i]
+        return maxim
