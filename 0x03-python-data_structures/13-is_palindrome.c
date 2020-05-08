@@ -13,7 +13,7 @@ int is_palindrome(listint_t **head)
 	int i = 0, j;
 
 	if (head == NULL || *head == NULL)
-		return (1);
+	    return (1);
 	while (cmp)
 	{
 		temp[i] = cmp->n;
