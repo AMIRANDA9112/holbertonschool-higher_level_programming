@@ -8,6 +8,6 @@ def search_replace(my_list, search, replace,):
         if my_list[i] == search:
             la_list = my_list.copy()
             la_list[i] = replace
-        return la_list
+            return la_list
 
 
