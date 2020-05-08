@@ -6,7 +6,7 @@ def search_replace(my_list, search, replace,):
     """
     for i in my_list:
         if my_list[i] == search:
-            lalist = my_list.copy()
-            lalist[i] = replace
-            return lalist
+            la_list = my_list.copy()
+            la_list[i] = replace
+            return la_list
     return my_list
