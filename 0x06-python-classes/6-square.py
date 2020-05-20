@@ -18,6 +18,7 @@ class Square:
     def size(self):
         """ get the size of the square"""
 
+        """ Return the size """
         return self.__size
 
     @size.setter
@@ -34,6 +35,7 @@ class Square:
     def position(self):
         """ Function to show the position """
 
+        """ Return the position """
         return self.__position
 
     @position.setter
@@ -49,6 +51,7 @@ class Square:
     def area(self):
         """ Function area(size) """
 
+        """ Function return size * size """
         return self.__size * self.__size
 
     def my_print(self):
