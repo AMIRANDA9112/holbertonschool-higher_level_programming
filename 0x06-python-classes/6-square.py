@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""this module create class Square"""
+""" This module create a Square """
 
 
-class Square():
-    """Square class"""
+class Square:
+    """ attribute private """
 
     def __init__(self, size=0, position=(0, 0)):
         """ Verifying type of value, size and position"""
@@ -15,8 +15,25 @@ class Square():
             print(err)
 
     @property
+    def size(self):
+        """ get the size of the square"""
+
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        """ Set the size of the square """
+
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        if value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
+
+    @property
     def position(self):
-        """ Return the position """
+        """ Function to show the position """
+
         return self.__position
 
     @position.setter
@@ -29,23 +46,10 @@ class Square():
         else:
             self.__position = value
 
-    @property
-    def size(self):
-        """to return size of Square"""
-        return self.__size
-
-    @size.setter
-    def size(self, value):
-        """Setter size of square"""
-        if type(value) is not int:
-            raise TypeError("size must be an integer")
-        if value < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = value
-
     def area(self):
-        """return square of size how area"""
-        return self.__size ** 2
+        """ Function area(size) """
+
+        return self.__size * self.__size
 
     def my_print(self):
         """ Print a square with # """
