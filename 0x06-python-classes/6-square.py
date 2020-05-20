@@ -51,10 +51,10 @@ class Square():
         """ Print a square with # """
 
         if self.__size == 0:
-            pass
+            print()
 
         for i in range(self.__position[1]):
-            pass
+            print()
 
         for i in range(self.__size):
             for j in range(self.__size + self.__position[0]):
