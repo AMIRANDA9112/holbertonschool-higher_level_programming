@@ -1,9 +1,9 @@
 TEST MODULE
 ======================
 
-Using "matrix_divided"
+Using "say_my_name"
 -------------------
->>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> say_my_name = __import__('3-say_my_name').say_my_name
 
 >>> matrix_divided([[1, 2, "j"], [4, 5, 6]], 3)
 Traceback (most recent call last):
@@ -24,4 +24,3 @@ ZeroDivisionError: division by zero
 Traceback (most recent call last):
 ...
 TypeError: div must be a number
-
