@@ -1,0 +1,13 @@
+TEST MODULE
+======================
+
+Using "print_square"
+-------------------
+
+>>> print_square(-1)
+	Traceback (most recent call last):
+	TypeError: size must be >= 0
+
+>>> print_square("hello")
+	Traceback (most recent call last):
+	TypeError: size must be an integer
