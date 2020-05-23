@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 """
 text_indentation make new line automatic while
 have a sign how '?', '.', ':'
