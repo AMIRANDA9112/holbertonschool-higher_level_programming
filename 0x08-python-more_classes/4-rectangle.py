@@ -20,19 +20,15 @@ class Rectangle():
         self.width = width
 
     def area(self):
-        """
-        returns area
+        """   returns area
         :return: area
-        :rtype: int
-        """
+        :rtype: int   """
         return self.__width * self.__height
 
     def perimeter(self):
-        """
-        returns perimeter:
+        """  returns perimeter:
         :return: perimeter:
-        :rtype: int
-        """
+        :rtype: int   """
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
@@ -46,9 +42,7 @@ class Rectangle():
 
     @height.setter
     def height(self, height):
-        """
-        :param height: int must be >= 0
-        """
+        """  :param height: int must be >= 0  """
         if type(height) is not int:
             raise TypeError("height must be an integer")
         if height < 0:
@@ -57,16 +51,12 @@ class Rectangle():
 
     @property
     def width(self):
-        """
-        :return: __width
-        """
+        """  :return: __width  """
         return self.__width
 
     @width.setter
     def width(self, width):
-        """
-        :param width: int must be >= 0
-        """
+        """  :param width: int must be >= 0  """
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width < 0:
@@ -74,10 +64,8 @@ class Rectangle():
         self.__width = width
 
     def __str__(self):
-        """
-        :return: return string how rectangle with "#"
-        :type: str
-        """
+        """   :return: return string how rectangle with "#"
+              :type: str   """
         hashtag_str = ""
         if self.width != 0 and self.__height != 0:
             hashtag_str = hashtag_str + "\n".join("#" * self.__width
@@ -85,8 +73,6 @@ class Rectangle():
         return hashtag_str
 
     def __repr__(self):
-        """
-        :return: a representation string "rep"
-        """
+        """ :return: a representation string "rep"     """
         rep = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
         return rep
