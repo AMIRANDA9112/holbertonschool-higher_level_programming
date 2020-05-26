@@ -4,13 +4,13 @@ create Rectangle class
 """
 
 
-class Rectangle ():
+class Rectangle():
     """
     Rectangle define
     """
+
     def __init__(self, width=0, height=0):
         """
-
         :type width: int
         must be >= 0
         :type height: int
@@ -40,7 +40,6 @@ class Rectangle ():
     @property
     def height(self):
         """
-
         :return: __height
         """
         return self.__height
@@ -48,7 +47,6 @@ class Rectangle ():
     @height.setter
     def height(self, height):
         """
-
         :param height: int must be >= 0
         """
         if type(height) is not int:
@@ -60,7 +58,6 @@ class Rectangle ():
     @property
     def width(self):
         """
-
         :return: __width
         """
         return self.__width
@@ -68,7 +65,6 @@ class Rectangle ():
     @width.setter
     def width(self, width):
         """
-
         :param width: int must be >= 0
         """
         if type(width) is not int:
@@ -79,20 +75,18 @@ class Rectangle ():
 
     def __str__(self):
         """
-
         :return: return string how rectangle with "#"
-        :rtype: str
+        :type: str
         """
         hashtag_str = ""
         if self.width != 0 and self.__height != 0:
             hashtag_str = hashtag_str + "\n".join("#" * self.__width
-                                        for j in range(self.__height))
+                                                  for j in range(self.__height))
         return hashtag_str
 
     def __repr__(self):
         """
-
         :return: a representation string "rep"
         """
         rep = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
-        return (rep)
+        return rep
