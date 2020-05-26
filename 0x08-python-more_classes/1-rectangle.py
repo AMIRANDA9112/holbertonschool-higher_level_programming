@@ -21,10 +21,18 @@ class Rectangle ():
 
     @property
     def height(self):
+        """
+
+        :return: __height
+        """
         return self.__height
 
     @height.setter
     def height(self, height):
+        """
+
+        :param height: int must be >= 0
+        """
         if type(height) is not int:
             raise TypeError("height must be an integer")
         if height < 0:
@@ -33,10 +41,18 @@ class Rectangle ():
 
     @property
     def width(self):
+        """
+
+        :return: __width
+        """
         return self.__width
 
     @width.setter
     def width(self, width):
+        """
+
+        :param width: int must be >= 0
+        """
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width < 0:
