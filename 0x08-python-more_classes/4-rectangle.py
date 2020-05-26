@@ -88,3 +88,11 @@ class Rectangle ():
             hashtag_str = hashtag_str + "\n".join("#" * self.__width
                                         for j in range(self.__height))
         return hashtag_str
+
+    def __repr__(self):
+        """
+
+        :return: a representation string "rep"
+        """
+        rep = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
+        return (rep)
