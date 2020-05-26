@@ -81,10 +81,10 @@ class Rectangle ():
         """
 
         :return: return string how rectangle with "#"
-        :rtype: str
+        :type: str
         """
-        my_str = ""
+        hashtag_str = ""
         if self.width != 0 and self.__height != 0:
-            my_str = my_str + "\n".join("#" * self.__width
+            hashtag_str = hashtag_str + "\n".join("#" * self.__width
                                         for j in range(self.__height))
-        return my_str
+        return hashtag_str
