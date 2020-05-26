@@ -119,4 +119,8 @@ class Rectangle():
 
     @classmethod
     def square(cls, size=0):
+        """
+
+        :type size: int
+        """
         return cls(size, size)
