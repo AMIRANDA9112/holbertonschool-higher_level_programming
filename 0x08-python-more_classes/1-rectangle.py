@@ -8,7 +8,7 @@ class Rectangle ():
     """
     Rectangle define
     """
-    def __init__(self, width=1, height=1):
+    def __init__(self, width=0, height=0):
         """
 
         :type width: int
