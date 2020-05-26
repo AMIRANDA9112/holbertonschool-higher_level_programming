@@ -10,6 +10,7 @@ class Rectangle():
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
@@ -90,8 +91,8 @@ class Rectangle():
         hashtag_str = ""
         if self.width != 0 and self.__height != 0:
             hashtag_str = hashtag_str \
-                          + "\n".join("#" * self.__width
-                                      for j in range(self.__height))
+                          + "\n".join(str(self.print_symbol)
+                                      * self.__width for j in range(self.__height))
         return hashtag_str
 
     def __repr__(self):
