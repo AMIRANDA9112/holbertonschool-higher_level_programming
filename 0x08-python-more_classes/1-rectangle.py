@@ -4,9 +4,9 @@ create Rectangle class
 """
 
 
-class Rectangle(object):
+class Rectangle ():
     """
-    Rectangle class
+    Rectangle define
     """
     def __init__(self, width=1, height=1):
 
