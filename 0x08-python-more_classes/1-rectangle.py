@@ -9,7 +9,13 @@ class Rectangle ():
     Rectangle define
     """
     def __init__(self, width=1, height=1):
+        """
 
+        :type width: int
+        must be >= 0
+        :type height: int
+        must be >= 0
+        """
         self.height = height
         self.width = width
 
