@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-create square class
+create Rectangle class
 """
 
 
-class Square(object):
+class Rectangle(object):
     """
     empty class
     """
