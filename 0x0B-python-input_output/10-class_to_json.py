@@ -1,11 +1,18 @@
 #!/usr/bin/python3
-""" this module return a object how a dictionary"""
+""" This module create the student classs"""
 
 
-def class_to_json(obj):
+class Student:
+    """
+    Student class
     """
 
-    :param obj: object to convert
-    :return: dictionary
-    """
-    return obj.__dict__
+    def __init__(self, first_name, last_name, age):
+        """Public instance attributes"""
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self):
+        """ Public method that retrieves a dictionary """
+        return self.__dict__
