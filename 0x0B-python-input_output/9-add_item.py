@@ -2,9 +2,14 @@
 """ Module """
 import sys
 from os import path
-
+"""
+argv in sys and path from call the adress
+"""
 save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
+"""
+call aux programs
+"""
 
 new_list = []
 if path.isfile("add_item.json"):
