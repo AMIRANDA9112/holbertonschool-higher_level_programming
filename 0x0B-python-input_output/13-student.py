@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" This module create the student class and convert it in dictionary, and set the object create"""
+"""
+    This module create the student class and convert
+    it in dictionary, and set the object create
+"""
 
 
 class Student:
