@@ -8,4 +8,4 @@ def lookup(obj):
     :param obj: object to convert
     :return: dir expression of object
     """
-    return dir(obj)
+    return list(dir(obj))
