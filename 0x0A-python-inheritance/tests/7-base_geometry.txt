@@ -1,0 +1,41 @@
+TEST MODULE
+======================
+
+Using "BaseGeometry" Class
+-------------------
+
+>>> bg.integer_validator("data", 0)
+Traceback (most recent call last):
+...
+ValueError: my_int must be greater than 0
+
+>>> bg.integer_validator("data", 0)
+Traceback (most recent call last):
+...
+ValueError: power must be greater than 0
+
+>>> bg.integer_validator("data", -1)
+Traceback (most recent call last):
+...
+ValueError: my_int must be greater than 0
+
+>>> bg.integer_validator("power", 5.2)
+Traceback (most recent call last):
+...
+TypeError: power must be an integer
+
+>>> bg.integer_validator("data", int('data'))
+Traceback (most recent call last):
+...
+ValueError: invalid literal for int() with base 10: 'data'
+
+>>> type(geometry)
+<class '7-base_geometry.BaseGeometry'>
+
+>>> isinstance(geometry, BaseGeometry)
+True
+
+>>> bg.integer_validator("", (1, 2))
+Traceback (most recent call last):
+...
+TypeError:  must be an integer
