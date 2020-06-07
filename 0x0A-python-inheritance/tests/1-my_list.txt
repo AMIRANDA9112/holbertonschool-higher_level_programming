@@ -32,6 +32,9 @@ Using "my_list"
 >>> print(my_list)
 ['h', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n']
 
+>>> my_list.print_sorted()
+['b', 'e', 'h', 'l', 'n', 'o', 'o', 'r', 't']
+
 >>> my_list = MyList()
 >>> type(my_list)
 <class '1-my_list.MyList'>
@@ -42,14 +45,3 @@ True
 
 >>> my_list.print_sorted()
 []
-
->>> my_list = MyList()
->>> my_list.append(int('mayo'))
-Traceback (most recent call last):
-...
-ValueError: invalid literal for int() with base 10: 'mayo'
-
->>> my_list = MyList()
->>> my_list.append("mayo")
->>> my_list.print_sorted()
-["mayo"]
