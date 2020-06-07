@@ -1,5 +1,5 @@
-# !/usr/bin/python3
-"""This module check the class"""
+#!/usr/bin/python3
+"""This module check the class in base to other"""
 
 
 def is_same_class(obj, a_class):
