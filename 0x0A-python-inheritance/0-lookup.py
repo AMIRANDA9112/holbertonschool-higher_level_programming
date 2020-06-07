@@ -4,7 +4,7 @@
 
 def lookup(obj):
     """
-    
+
     :param obj: object to convert
     :return: dir expression of object
     """
