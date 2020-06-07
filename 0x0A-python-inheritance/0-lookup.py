@@ -6,6 +6,6 @@ def lookup(obj):
     """
     
     :param obj: object to convert
-    :return: dir expresion of object
-    """"
-        return list(dir(obj))
+    :return: dir expression of object
+    """
+    return list(dir(obj))
