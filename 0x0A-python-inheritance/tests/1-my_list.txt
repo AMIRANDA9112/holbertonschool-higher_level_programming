@@ -19,8 +19,10 @@ Using "my_list"
 >>> my_list.append(2)
 >>> print(my_list)
 [2, 2]
+
 >>> my_list.print_sorted()
-[6, 9]
+[2, 2]
+
 >>> my_list.append(-2)
 >>> my_list.append(-3)
 >>> my_list.print_sorted()
