@@ -55,7 +55,7 @@ class Base():
 
     @classmethod
     def create(cls, **dictionary):
-        """ Returns all attributes already set. """
+        """ Returns all attributes already set """
         if cls.__name__ is "Rectangle":
             dummy = cls(2, 4)
         elif cls.__name__ is "Square":
@@ -68,11 +68,11 @@ class Base():
         """returns a list of instances"""
 
         try:
-            list_of_ins = []
+            list_of_instances = []
             with open(cls.__name__ + '.json') as my_file:
                 dicts = Base.from_json_string(my_file.read())
                 for key in dicts:
-                    list_of_ins += [cls.create(**key)]
-                return list_of_ins
+                    list_of_instances += [cls.create(**key)]
+                return list_of_instances
         except:
             return []
