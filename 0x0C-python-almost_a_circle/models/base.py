@@ -65,14 +65,14 @@ class Base():
 
     @classmethod
     def load_from_file(cls):
-        """l
-        """
-        file_name = cls.__name__ + ".json"
-        my_list = []
-        if not os.path.isfile(file_name):
-            return my_list
-        with open(file_name) as my_file:
-            data = cls.from_json_string(my_file.read())
-            for instance in data:
-                my_list.append(cls.create(**instance))
-        return my_list
+        """returns a list of instances"""
+
+        try:
+            list_of_ins = []
+            with open(cls.__name__ + '.json') as my_file:
+                dicts = Base.from_json_string(my_file.read())
+                for key in dicts:
+                    list_of_ins += [cls.create(**key)]
+                return list_of_ins
+        except:
+            return []
