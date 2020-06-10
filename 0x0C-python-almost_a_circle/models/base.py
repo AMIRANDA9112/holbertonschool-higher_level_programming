@@ -18,3 +18,13 @@ class Base():
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """list of dictionaries to JSON format"""
+
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+
+        my_dict = json.dumps(list_dictionaries)
+        return my_dict
