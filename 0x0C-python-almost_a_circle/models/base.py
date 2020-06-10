@@ -76,4 +76,3 @@ class Base():
             for instance in data:
                 my_list.append(cls.create(**instance))
         return my_list
-
