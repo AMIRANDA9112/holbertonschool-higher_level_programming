@@ -32,16 +32,16 @@ class TestBase(unittest.TestCase):
         This Test check
         the correct set of id
         """
-        b_0 = Base(9)
-        self.assertEqual(b_0.id, 9)
+        p1 = Base(9)
+        self.assertEqual(p1.id, 9)
 
-    def test01(self):
+    def test02(self):
         """
         This Test check
         the correct set of id
         """
-        b_0 = Base("text")
-        self.assertEqual(b_0.id, "text")
+        p1 = Base("text")
+        self.assertEqual(p1.id, "text")
 
 
 
