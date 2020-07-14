@@ -1,2 +1,3 @@
---show al database--
-root -p
+-- list all databases
+-- in Root
+SHOW DATABASES
