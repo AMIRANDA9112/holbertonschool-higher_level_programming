@@ -25,5 +25,5 @@ if __name__ == '__main__':
         rows = cur.fetchall()  # get all the rows.
         for row in rows:
             print(row)
-        cur.close()  # Close all cursors.
-        db.close()
+    cur.close()  # Close all cursors.
+    db.close()
