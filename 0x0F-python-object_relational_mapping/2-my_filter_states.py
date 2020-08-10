@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ search match"""
 
-
 from sys import argv
 import MySQLdb
 

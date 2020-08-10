@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ list a item """
 
-
 from sys import argv
 from MySQLdb import connect
 
