@@ -2,7 +2,6 @@
 """Start link class todatabase"""
 import sys
 from model_state import Base
-from model_state import State
 from sqlalchemy import (create_engine)
 
 if __name__ == "__main__":
