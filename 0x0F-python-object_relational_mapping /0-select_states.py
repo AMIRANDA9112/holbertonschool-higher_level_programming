@@ -3,23 +3,24 @@
 
 
 from sys import argv
-import MySQLdb
+from MySQLdb import connect
 
 if __name__ == '__main__':
 
     user = argv[1]
     password = argv[2]
-    mydb = argv[3]
+    my_db = argv[3]
 
-    db = MySQLdb.connect(
+    db = connect(
         host="localhost",
         port=3306,
         user=user,
         passwd=password,
-        db=mydb)
+        db=my_db)
 
     cursor = db.cursor()
     database = cursor.execute("SELECT * FROM states ORDER BY id ASC")
     for i in range(database):
-        print(cursor.fetchone())
+        ret = cursor.fetchone()
+        print(ret)
     db.close()
