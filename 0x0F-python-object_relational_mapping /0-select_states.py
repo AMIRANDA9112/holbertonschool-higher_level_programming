@@ -15,8 +15,8 @@ if __name__ == '__main__':
         host="localhost",
         port=3306,
         user=user,
-        passwd=my_pass,
-        db=my_db)
+        passwd=password,
+        db=mydb)
 
     cursor = db.cursor()
     database = cursor.execute("SELECT * FROM states ORDER BY id ASC")
