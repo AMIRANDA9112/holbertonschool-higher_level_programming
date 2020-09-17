@@ -2,7 +2,6 @@
 /*
    print a square
 */
-
 const argv = process.argv;
 const number = argv.length;
 
