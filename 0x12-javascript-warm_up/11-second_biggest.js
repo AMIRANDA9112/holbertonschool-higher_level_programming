@@ -1,9 +1,11 @@
 #!/usr/bin/node
-const numbers = process.argv.slice(2);
 
-if (numbers.length < 2) {
+const argv = process.argv;
+const numberArgv = argv.length;
+
+if (numberArgv <= 3) {
   console.log('0');
 } else {
-  numbers.sort((a, b) => { return (b - a); });
-  console.log(numbers[1]);
+  const secondb = argv.sort(function (a, b) { return (b - a); });
+  console.log(secondb[3]);
 }
