@@ -1,6 +1,5 @@
 #!/usr/bin/node
 const times = parseInt(process.argv[2]);
-const text = "Missing size"
 
 if (!isNaN(times)) {
   for (let i = 0; i < times; i++) {
@@ -11,5 +10,5 @@ if (!isNaN(times)) {
     console.log(sqrt);
   }
 } else {
-  console.log(text);
+  console.log("Missing size");
 }
