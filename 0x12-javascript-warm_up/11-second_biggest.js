@@ -1,9 +1,12 @@
 #!/usr/bin/node
+/*
+   print a square
+*/
 
 const argv = process.argv;
-const numberArgv = argv.length;
+const number = argv.length;
 
-if (numberArgv <= 3) {
+if (number <= 3) {
   console.log('0');
 } else {
   const se = argv.sort(function (a, b) { return (b - a); });
