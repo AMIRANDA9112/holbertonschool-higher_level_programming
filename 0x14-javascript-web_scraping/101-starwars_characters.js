@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// computes the number of tasks completed by user id
 const rq = require('request');
 const url = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
 
