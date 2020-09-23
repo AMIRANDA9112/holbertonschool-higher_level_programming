@@ -1,4 +1,3 @@
-CLionIntelliJ IDEAPhpStormPyCharmWebStorm  
 #!/usr/bin/node
 const request = require('request');
 const CONSUMER_KEY = process.argv[2];
