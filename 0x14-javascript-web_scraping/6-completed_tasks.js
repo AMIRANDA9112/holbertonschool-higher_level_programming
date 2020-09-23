@@ -1,7 +1,6 @@
 #!/usr/bin/node
 const rq = require('request');
 
-
 rq.get(process.argv[2], function (error, response, body) {
   if (error) {
     console.log(error);
