@@ -18,3 +18,4 @@ rq(url, function (err, res, body) {
       });
     }
   }
+});
